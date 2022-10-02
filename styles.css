@@ -5,16 +5,33 @@
 
 .landing1 {
     display: flex;
+align-items: center;
 
 }
 
 .leftside-logo {
     display: flex;
+    justify-content: left;
+    position: absolute;
+    top: 218px;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
+    width: 500px;
+}
+.leftside-logo img{
+    filter: invert(99%) sepia(0%) saturate(3%) hue-rotate(187deg) brightness(105%) contrast(100%);
+}
+.leftside-logo p {
     font-family: "Norse-Bold", 'Times New Roman', Times, serif;
     font-size: 100px;
-    border: 2px solid blue;
+    margin: 0;
+    color: white;
 }
 
-.leftside-logo p {
-    margin: 0;
+.rightside {
+    padding-left: 3em;
+}
+
+.formfield {
+    background-color: white;
 }
