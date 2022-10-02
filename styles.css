@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(assets/Norse-Bold.otf);
+}
+
+.landing1 {
+    display: flex;
+
+}
+
+.leftside-logo {
+    display: flex;
+    font-family: "Norse-Bold", 'Times New Roman', Times, serif;
+    font-size: 100px;
+    border: 2px solid blue;
+}
+
+.leftside-logo p {
+    margin: 0;
+}
