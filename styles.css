@@ -2,6 +2,10 @@
     font-family: Norse-Bold;
     src: url(assets/Norse-Bold.otf);
 }
+body {
+    background-color: whitesmoke;
+    min-width: 900px;
+}
 
 .landing1 {
     display: flex;
@@ -17,7 +21,9 @@ align-items: center;
     background-color: rgba(0, 0, 0, 0.3);
     opacity: 0.9;
     width: 500px;
+    user-select: none;
 }
+
 .leftside-logo img{
     filter: invert(99%) sepia(0%) saturate(3%) hue-rotate(187deg) brightness(105%) contrast(100%);
 }
@@ -27,11 +33,23 @@ align-items: center;
     margin: 0;
     color: white;
 }
-
-.rightside {
-    padding-left: 3em;
+.rightHeader {
+    margin: 2em;
 }
-
-.formfield {
-    background-color: white;
+.inputcontainer {
+background-color: cyan;
+padding: 2em;
+}
+.inputcontainer div {
+    display: flex;
+    flex-direction: column;
+}
+.signup {
+    border-radius: 3px;
+    color: #c9eaff;
+    background-color: #024bb8;
+    padding: 5px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
 }
