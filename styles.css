@@ -48,8 +48,21 @@ padding: 2em;
     border-radius: 3px;
     color: #c9eaff;
     background-color: #024bb8;
-    padding: 5px;
+    padding: 15px;
     margin-top: 1em;
     margin-bottom: 1em;
+    margin-left: 2em;
+
+}
+
+input:valid {
+    border-color: #024bb8;
+
+}
+input:invalid {
+    border-color: red;
+}
+
+.login {
     margin-left: 2em;
 }
