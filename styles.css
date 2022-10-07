@@ -2,67 +2,90 @@
     font-family: Norse-Bold;
     src: url(assets/Norse-Bold.otf);
 }
+
 body {
     background-color: whitesmoke;
     min-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    background-color: black;
 }
 
 .landing1 {
     display: flex;
-align-items: center;
-
+    align-items: center;
 }
 
 .leftside-logo {
     display: flex;
     justify-content: left;
     position: absolute;
-    top: 218px;
+    top: 268px;
     background-color: rgba(0, 0, 0, 0.3);
     opacity: 0.9;
     width: 500px;
     user-select: none;
 }
 
-.leftside-logo img{
+.leftside-logo img {
     filter: invert(99%) sepia(0%) saturate(3%) hue-rotate(187deg) brightness(105%) contrast(100%);
 }
+
 .leftside-logo p {
     font-family: "Norse-Bold", 'Times New Roman', Times, serif;
     font-size: 100px;
     margin: 0;
     color: white;
 }
-.rightHeader {
-    margin: 2em;
+
+.rightside {
+    background-color: white;
+    padding: 50px;
+    min-height: 650px;
+    border-radius: 7px;
 }
+
 .inputcontainer {
-background-color: cyan;
-padding: 2em;
+    background-color: #e5e5e5;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 3px solid #e5e5e5;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px #a5a5a5;
 }
+
 .inputcontainer div {
     display: flex;
     flex-direction: column;
+    margin: 10px 20px 10px 0;
 }
+
 .signup {
-    border-radius: 3px;
+    border-radius: 5px;
     color: #c9eaff;
     background-color: #024bb8;
-    padding: 15px;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 2em;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: larger;
+}
 
+form div input {
+    border: 4px solid;
+    border-radius: 5px;
 }
 
 input:valid {
     border-color: #024bb8;
 
 }
+
 input:invalid {
     border-color: red;
 }
 
-.login {
-    margin-left: 2em;
+input:focus {
+    border: 4px solid cyan;
 }
