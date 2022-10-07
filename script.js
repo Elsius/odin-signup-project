@@ -7,9 +7,9 @@ function confirmPassword() {
     const password = document.getElementById("password").value;
     const confirmPass = document.getElementById("confirmPass").value;
     if (password === confirmPass) {
-        console.log("it matches")
+        //do stuff if password matches
     }
     else {
-        console.log("doh")
+        alert("Passwords do not match")
     }
 }
