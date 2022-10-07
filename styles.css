@@ -2,22 +2,30 @@
     font-family: Norse-Bold;
     src: url(assets/Norse-Bold.otf);
 }
-
+:root {
+    --schemered: #A61B5B;
+    --schemedarkblue: #0B0859;
+    --schemeblue: #18298C;
+    --schemelightblue: #2168A6;
+    --schemebrightestblue: #5AA3BF;
+}
 body {
-    background-color: whitesmoke;
     min-width: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
-    background-color: black;
+    background: linear-gradient(180deg, var(--schemedarkblue) 0%, var(--schemelightblue) 42%, var(--schemered) 100%);
 }
 
 .landing1 {
     display: flex;
     align-items: center;
 }
-
+.rightside form legend {
+    font-size: small;
+    color: #a5a5a5;
+}
 .leftside-logo {
     display: flex;
     justify-content: left;
@@ -63,29 +71,25 @@ body {
     margin: 10px 20px 10px 0;
 }
 
-.signup {
+#signup {
     border-radius: 5px;
-    color: #c9eaff;
-    background-color: #024bb8;
+    color: white;
+    background-color: var(--schemedarkblue);
     padding: 10px 20px;
     margin: 10px;
     font-size: larger;
 }
 
 form div input {
-    border: 4px solid;
+    border: 2px solid;
     border-radius: 5px;
 }
 
-input:valid {
-    border-color: #024bb8;
-
-}
-
 input:invalid {
-    border-color: red;
+    border-color: var(--schemered);
 }
 
 input:focus {
-    border: 4px solid cyan;
+    border-color: var(--schemebrightestblue);
+    box-shadow: 3px 3px 3px #5AA3BF;
 }

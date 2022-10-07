@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up!</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="landing1">
@@ -20,7 +21,7 @@
             <div class="rightHeader">
                 <h1>Welcome!</h1>
                 <h3>The place to be for all your <em>trivial</em> needs</h3>
-                <div>Lots of flavor text going here to make you feel the immersion of a fake website</div>
+                <div>Lots of flavor text to season the landing</div>
             </div>
                 <form action="">
                     <legend>Fields marked * are required</legend>
@@ -34,7 +35,7 @@
                             <input type="text" name="lastName" id="lastName">
                         </div>
                         <div>
-                            <label for="email">Email</label>
+                            <label for="email">Email*</label>
                             <input type="email" name="email" id="email" required>
                         </div>
                         <div>
@@ -42,15 +43,15 @@
                             <input type="tel" name="phone" id="phone">
                         </div>
                         <div>
-                            <label for="password">Password</label>
+                            <label for="password">Password*</label>
                             <input type="password" name="password" id="password" class="error" required>
                         </div>
                         <div>
-                            <label for="confirmPass">Confirm Password</label>
+                            <label for="confirmPass">Confirm Password*</label>
                             <input type="password" name="confirmPass" id="confirmPass" class="error" required>
                         </div>
                     </div>
-                    <button class="signup"><strong>Sign Up</strong></button>
+                    <button id="signup"><strong>Sign Up</strong></button>
             </form>
             <div class="login">Already have an account? <a href="#">Log in</a></div>
         </div>
